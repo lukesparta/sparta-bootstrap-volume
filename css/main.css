@@ -1,0 +1,69 @@
+.navbar{
+  margin: 0;
+  padding:0;
+}
+
+video{
+  width: 100%;
+  margin-top: -20vh;
+  z-index: -100;
+}
+
+.who-are-we{
+  background: #eaedf0;
+  top: -5vh;
+  position: relative;
+  margin: 0;
+  padding: 0 80px;
+
+}
+
+.higher{
+  margin-top: -100px;
+  background-color: #fff;
+  opacity: .93;
+  padding: 30px 50px;
+}
+
+.promo-img-container{
+  padding: 40px 50px;
+}
+.promo-img img{
+  width: 320px;
+  height: 220px;
+}
+
+.img-item{
+  padding: 0 10px;
+}
+
+.service-con{
+  padding: 40px 35px;
+  max-height: 500px;
+}
+
+.service-box{
+  background: #263039;
+  color: #f2f2f4;
+  height: 200px;
+  border: 2px solid #fff;
+}
+
+input, textarea{
+  background: #263039;
+  color: #eaedf0;
+  height: 60px;
+  padding: 20px 0;
+  border: none;
+  border-bottom: 2px solid #7db6df;
+  width: 100%;
+}
+
+.request-form-con{
+  background: #263039;
+  color: #eaedf0;
+}
+
+.input-col{
+  padding: 0;
+}
