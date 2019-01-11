@@ -1,12 +1,51 @@
+/*--------------NAVBAR STYLES--------------*/
+.logo{
+  padding: 0;
+}
 .navbar{
   margin: 0;
   padding:0;
+  background: #7db6df;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  font-size: 20px;
+}
+.navbar li{
+  margin: 0 10px;
 }
 
+.navbar a{
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 16px 20px;
+}
+
+.collapse .current{
+  color: #263039;
+}
+
+.white-nav-item{
+  background: #fff;
+}
+
+.white-nav-item a{
+  color: #7db6df;
+}
+
+/*--------------VIDEO HEADER--------------*/
 video{
   width: 100%;
   margin-top: -20vh;
   z-index: -100;
+}
+
+.video-controls{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -60px;
+  position: relative;
 }
 
 .who-are-we{
@@ -15,14 +54,35 @@ video{
   position: relative;
   margin: 0;
   padding: 0 80px;
-
 }
 
+.who-are-we h2,
+.who-are-we h3,
+.who-are-we ul li{
+  color: #7db6df;
+}
+
+.who-are-we ul{
+  list-style-type: none;
+}
+.who-are-we ul li::before{
+  content: "\2022";
+  color: black;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.who-are-we h2{
+  margin-bottom: 40px;
+}
 .higher{
   margin-top: -100px;
   background-color: #fff;
   opacity: .93;
   padding: 30px 50px;
+  height: 550px;
 }
 
 .promo-img-container{
@@ -52,18 +112,102 @@ video{
 input, textarea{
   background: #263039;
   color: #eaedf0;
-  height: 60px;
+  height: 70px;
   padding: 20px 0;
   border: none;
   border-bottom: 2px solid #7db6df;
   width: 100%;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+form{
+  padding: 0 100px;
+}
+
 .request-form-con{
   background: #263039;
   color: #eaedf0;
+  text-align: center;
+  padding: 20px;
+  
 }
 
-.input-col{
-  padding: 0;
+.request-form-con p{
+  text-align: left;
+}
+
+.input-col-left{
+  padding-right: 5px;
+  padding-left:0;
+}
+
+.input-col-right{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+form button{
+  padding: 15px 40px;
+  background: transparent;
+  border: 3px solid #7db6df;
+  color: #7db6df;
+  margin: 20px 0;
+}
+
+.hpe-img{
+  margin: 30px 0;
+}
+
+.carousel-control-next-icon{
+  border: black 2px solid;
+  background-image: none;
+}
+
+/*Footer Styles*/
+.jumbotron{
+  margin: 0;
+  background: #7db6df; 
+}
+
+.footer-content div{
+  margin-bottom: 25px;
+  color: white;
+  font-size: 20px;
+}
+
+.fa-twitter{
+  background: #00aced;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  padding:20px;
+  margin-right: 30px;
+}
+
+.fa-linkedin-in{
+  background: #0084b4;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  padding:20px;
+  margin-left: 30px;
+}
+
+.service-box .fas,
+.service-box .far{
+  font-size: 60px;
+  margin: 50px 0 10px 0;
+}
+
+.plus-hover{
+  transition: all .2s ease-in-out;
+}
+.plus-hover:hover{
+  transform: scale(1.1);
 }
